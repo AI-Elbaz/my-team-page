@@ -83,7 +83,8 @@ header .description {
 
 .card img {
     display: block;
-    width: 138.72px;
+    width: 93%;
+    max-width: 238px;
     margin: 0 20px 10px 0;
 }
 
@@ -147,7 +148,6 @@ footer a:visited {
     }
 
     .card img {
-        width: 238px;
         margin-bottom: 15px;
     }
 
@@ -160,7 +160,7 @@ footer a:visited {
     }
 }
 
-@media only screen and (min-width: 851px) {
+@media only screen and (min-width: 998px) {
     header {
         flex-direction: row;
         padding: 110px 10px;
