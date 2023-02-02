@@ -83,9 +83,8 @@ header .description {
 
 .card img {
     display: block;
-    width: 93%;
-    max-width: 238px;
-    margin: 0 20px 10px 0;
+    max-width: 240px;
+    transition: 0.4s;
 }
 
 .card .name {
@@ -96,17 +95,24 @@ header .description {
 }
 
 .card .role {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 1.325em;
     font-family: 'PT Serif';
     text-transform: uppercase;
-
+    writing-mode: vertical-lr;
     position: absolute;
     top: 0;
     left: 100%;
-    white-space: nowrap;
-    transform: rotate(90deg);
-    transform-origin: top left;
+    margin-left: 5px;
+    transition: 0.2s ease-out;
+}
+
+.card:hover img {
+    opacity: 0.8;
+}
+
+.card:hover .role {
+    transform: translateY(200%);
 }
 
 footer {
@@ -148,7 +154,7 @@ footer a:visited {
     }
 
     .card img {
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
 
     .card .name {
